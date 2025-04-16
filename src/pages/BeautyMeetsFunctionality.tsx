@@ -18,9 +18,9 @@ const BeautyMeetsFunctionality = () => {
             
             <p className="mb-6 text-black text-lg font-semibold text-left">With Growth as a Service, Yanisa Execution acts as your AI-powered CXO layer. We don’t just advise—we execute. We build your internal team, set up modern digital & sales systems, and deploy AI agents that generate leads, book calls, and automate your sales pipeline. We also develop web apps, websites, or internal tools, with the cost of tools, tech, and team borne by the brand. Our role is to drive business outcomes—measured in revenue, systems, and scale.</p>
             
-            <h3 className="text-xl font-bold mb-2">Let's redefine what it means to build a bathroom—inside and out.</h3>
             
-            <p className="text-gray-700 mb-4">Are you ready to join the revolution?</p>
+            
+            <p className="mb-4 text-[#060606] text-base font-medium">Are you ready to join the revolution?</p>
           </div>
           
           <div className="md:col-span-1">
@@ -61,9 +61,7 @@ const BeautyMeetsFunctionality = () => {
           </div>
         </div>
         
-        <div className="bg-gray-200 p-4 rounded-md text-center mt-8">
-          <p className="text-gray-700">Modernizing Bathrooms Together: Partner with Us to Lead the Change.</p>
-        </div>
+        
       </div>
     </div>;
 };
