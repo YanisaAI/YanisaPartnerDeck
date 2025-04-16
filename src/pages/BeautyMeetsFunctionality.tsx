@@ -1,20 +1,16 @@
-
 import React from 'react';
 import PageHeader from '@/components/PageHeader';
 import { Play, Volume2 } from 'lucide-react';
-
 const BeautyMeetsFunctionality = () => {
-  return (
-    <div className="min-h-screen bg-gray-50">
-      <PageHeader 
-        title="Where Beauty Meets Functionality" 
-        subtitle="Transforming Bathrooms Inside and Out" 
-      />
+  return <div className="min-h-screen bg-gray-50">
+      <PageHeader title="Where Beauty Meets Functionality" subtitle="Transforming Bathrooms Inside and Out" />
       
       <div className="p-6">
         <div className="mb-8 grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="md:col-span-2">
-            <h2 className="text-2xl font-bold mb-4">Empowering Partners to Bring Innovation and Elegance to Every Customer</h2>
+            <h2 className="font-bold mb-4 text-xl text-[#101010]">Yanisa Execution is an AI Accelerator that invests in and partners with startups, SMEs, MSMEs, and listed/private companies.
+
+          </h2>
             
             <p className="text-gray-700 mb-4">
               Modernizing Trends is your ultimate partner in transforming bathrooms, blending innovation, elegance, and cutting-edge technology.
@@ -32,11 +28,7 @@ const BeautyMeetsFunctionality = () => {
           <div className="md:col-span-1">
             <div className="bg-blue-50 rounded-lg overflow-hidden">
               <div className="relative">
-                <img 
-                  src="/public/lovable-uploads/18e1f936-c52e-4b0d-bcae-46a45f92ab4b.png" 
-                  alt="Director" 
-                  className="w-full h-auto" 
-                />
+                <img src="/public/lovable-uploads/18e1f936-c52e-4b0d-bcae-46a45f92ab4b.png" alt="Director" className="w-full h-auto" />
                 
                 <div className="absolute bottom-0 left-0 right-0 bg-blue-900/80 p-3">
                   <div className="text-white">
@@ -75,8 +67,6 @@ const BeautyMeetsFunctionality = () => {
           <p className="text-gray-700">Modernizing Bathrooms Together: Partner with Us to Lead the Change.</p>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default BeautyMeetsFunctionality;
