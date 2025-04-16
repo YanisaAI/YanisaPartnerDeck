@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -55,12 +56,7 @@ export default {
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
-					primary: 'hsl(var(--sidebar-primary))',
-					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-					accent: 'hsl(var(--sidebar-accent))',
-					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-					border: 'hsl(var(--sidebar-border))',
-					ring: 'hsl(var(--sidebar-ring))'
+					border: 'hsl(var(--sidebar-border))'
 				}
 			},
 			borderRadius: {
@@ -89,6 +85,10 @@ export default {
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out'
+			},
+			backgroundImage: {
+				'bathroom-hero': "url('/public/lovable-uploads/226e132d-6d06-4b9b-968a-54a1d2a4676a.png')",
+				'partner-shelf': "url('/public/lovable-uploads/65b25608-5ff8-4c28-a6b2-efe31c85cdc3.png')",
 			}
 		}
 	},
