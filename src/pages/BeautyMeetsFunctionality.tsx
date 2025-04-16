@@ -20,7 +20,7 @@ const BeautyMeetsFunctionality = () => {
             
             
             
-            <p className="mb-4 text-[#060606] text-base font-medium">Are you ready to join the revolution?</p>
+            
           </div>
           
           <div className="md:col-span-1">
