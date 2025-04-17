@@ -58,7 +58,8 @@ const HowToGetStarted = () => {
           </div>
         </div>
       </div>
-    </div>;
+    </div>
+  );
 };
 
 export default HowToGetStarted;
