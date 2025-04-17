@@ -14,8 +14,8 @@ const HowToGetStarted = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-[15px] md:gap-[20px]">
             {/* Container 1 */}
             <div style={{
-            transformStyle: 'preserve-3d'
-          }} className="bg-white rounded-lg shadow-[0px_5px_10px_rgba(0,0,0,0.2)] p-6 ">
+              transformStyle: 'preserve-3d'
+            }} className="bg-white rounded-lg shadow-[0px_5px_10px_rgba(0,0,0,0.2)] p-6">
               <h3 className="font-bold mb-6 font-poppins text-black text-xl text-center">🚀 Yanisa Execution: Onboarding Timeline</h3>
               
               <ul className="space-y-4 text-[16px] text-[#2c3e50]">
@@ -31,8 +31,8 @@ const HowToGetStarted = () => {
             
             {/* Container 2 */}
             <div style={{
-            transformStyle: 'preserve-3d'
-          }} className="bg-white rounded-lg shadow-[0px_5px_10px_rgba(0,0,0,0.2)] p-6 ">
+              transformStyle: 'preserve-3d'
+            }} className="bg-white rounded-lg shadow-[0px_5px_10px_rgba(0,0,0,0.2)] p-6">
               <h3 className="font-bold mb-6 font-poppins text-black text-lg text-center">🚀 How to Get Started with Yanisa Execution</h3>
               
               <p className="mb-4 text-[16px] text-[#2c3e50]">We don't just consult — we partner and execute with ownership. Here's how to begin your growth journey with us:</p>

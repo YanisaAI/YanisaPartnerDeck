@@ -1,16 +1,19 @@
+
 import React from 'react';
 import PageHeader from '@/components/PageHeader';
+
 const WhoWeAre = () => {
-  return <div className="min-h-screen bg-gray-50">
-      <PageHeader title="Meet Us - The bathroom Experts" subtitle="Transforming Bathrooms Inside and Out" />
+  return (
+    <div className="min-h-screen bg-gray-50">
+      <PageHeader title="Meet Us - The Execution Experts" subtitle="Transforming Businesses Inside and Out" />
       
       <div className="p-6 bg-[#f9f9f9]">
-        <div className="max-w-[1200px] py-8 px-[5px] mx-0 rounded-md bg-white">
+        <div className="max-w-[1200px] mx-auto py-8 px-[5px] rounded-md bg-white">
           <h2 className="text-[36px] font-bold text-[#2c3e50] text-center mb-10 font-poppins">Who We Are</h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-[20px]">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             {/* Container 1: About Us */}
-            <div className="bg-white rounded-[10px] p-6 shadow-[5px_5px_10px_rgba(0,0,0,0.2)] py-[26px] px-[25px] mx-0">
+            <div className="bg-white rounded-[10px] p-6 shadow-[0px_5px_10px_rgba(0,0,0,0.2)]">
               <h3 className="flex items-center text-black mb-4 font-poppins text-2xl font-extrabold">
                 <span className="mr-2">🟩</span> About Us
               </h3>
@@ -25,7 +28,7 @@ const WhoWeAre = () => {
             </div>
             
             {/* Container 2: What Sets Us Apart? */}
-            <div className="bg-white rounded-[10px] p-6 shadow-[5px_5px_10px_rgba(0,0,0,0.2)]">
+            <div className="bg-white rounded-[10px] p-6 shadow-[0px_5px_10px_rgba(0,0,0,0.2)]">
               <h3 className="flex items-center font-bold text-black mb-4 font-poppins text-2xl">
                 <span className="mr-2">🟪</span> What Sets Us Apart?
               </h3>
@@ -40,7 +43,7 @@ const WhoWeAre = () => {
             </div>
             
             {/* Container 3: What's In It For You? */}
-            <div className="bg-white rounded-[10px] p-6 shadow-[5px_5px_10px_rgba(0,0,0,0.2)]">
+            <div className="bg-white rounded-[10px] p-6 shadow-[0px_5px_10px_rgba(0,0,0,0.2)]">
               <h3 className="flex items-center font-bold text-black mb-4 font-poppins text-2xl">
                 <span className="mr-2">🟥</span> What's In It For You?
               </h3>
@@ -56,6 +59,8 @@ const WhoWeAre = () => {
           </div>
         </div>
       </div>
-    </div>;
+    </div>
+  );
 };
+
 export default WhoWeAre;
