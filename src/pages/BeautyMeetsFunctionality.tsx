@@ -5,7 +5,10 @@ import PageHeader from '@/components/PageHeader';
 const BeautyMeetsFunctionality = () => {
   return (
     <div className="min-h-screen bg-gray-50">
-      <PageHeader title="Where Beauty Meets Functionality" subtitle="Transforming Bathrooms Inside and Out" />
+      <PageHeader 
+        title="Where Beauty Meets Functionality" 
+        subtitle="Transforming Bathrooms Inside and Out" 
+      />
       
       <div className="p-6 bg-[#f9f9f9]">
         <div className="max-w-[1200px] mx-auto py-8 px-5">

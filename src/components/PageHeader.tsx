@@ -13,7 +13,7 @@ const PageHeader: React.FC<PageHeaderProps> = ({
   bgImage = 'bg-bathroom-hero'
 }) => {
   return (
-    <div className={`page-header ${bgImage}`}>
+    <div className={`page-header ${bgImage}`} style={{ backgroundImage: bgImage.startsWith('bg-') ? undefined : `url(${bgImage})` }}>
       <h1 className="page-title">{title}</h1>
       {subtitle && <p className="page-subtitle">{subtitle}</p>}
     </div>

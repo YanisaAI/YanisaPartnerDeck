@@ -7,7 +7,7 @@ const Index = () => {
   
   useEffect(() => {
     // Redirect to the appropriate page
-    navigate('/du-who-we-are');
+    navigate('/who-we-are');
   }, [navigate]);
   
   return (
