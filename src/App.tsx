@@ -3,12 +3,10 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Layout from "./components/Layout";
 import Index from "./pages/Index";
-import SelectedPartner from "./pages/SelectedPartner";
-import Appointments from "./pages/Appointments";
-import BeautyMeetsFunctionality from "./pages/BeautyMeetsFunctionality";
+import AboutYanisa from "./pages/AboutYanisa";
 import DuBeautyMeetsFunctionality from "./pages/DuBeautyMeetsFunctionality";
 import WhoWeAre from "./pages/WhoWeAre";
 import DuWhoWeAre from "./pages/DuWhoWeAre";
@@ -34,9 +32,8 @@ const App = () => (
         <Layout>
           <Routes>
             <Route path="/" element={<Index />} />
-            <Route path="/selected-partner" element={<SelectedPartner />} />
-            <Route path="/appointments" element={<Appointments />} />
-            <Route path="/beauty-meets-functionality" element={<BeautyMeetsFunctionality />} />
+            <Route path="/about-yanisa" element={<AboutYanisa />} />
+            <Route path="/beauty-meets-functionality" element={<Navigate to="/about-yanisa" replace />} />
             <Route path="/du-beauty-meets-functionality" element={<DuBeautyMeetsFunctionality />} />
             <Route path="/who-we-are" element={<WhoWeAre />} />
             <Route path="/du-who-we-are" element={<DuWhoWeAre />} />
