@@ -40,7 +40,7 @@ const WhoWeAre = () => {
             </div>
             
             {/* Container 3: What's In It For You? */}
-            <div className="bg-white rounded-[10px] p-6 shadow-[5px_5px_10px_rgba(0,0,0,0.2)] transform transition-all duration-300 hover:rotate-[5deg] hover:translate-z-[20px] hover:shadow-[8px_8px_15px_rgba(0,0,0,0.3)]">
+            <div className="bg-white rounded-[10px] p-6 shadow-[5px_5px_10px_rgba(0,0,0,0.2)]">
               <h3 className="flex items-center font-bold text-black mb-4 font-poppins text-2xl">
                 <span className="mr-2">🟥</span> What's In It For You?
               </h3>
