@@ -4,14 +4,16 @@ import React from 'react';
 interface PageHeaderProps {
   title: string;
   subtitle?: string;
+  bgImage?: string;
 }
 
 const PageHeader: React.FC<PageHeaderProps> = ({
   title,
   subtitle = "Potential to Reality",
+  bgImage,
 }) => {
   return (
-    <div className="w-full py-12 px-6 bg-black/[0.98]">
+    <div className={`w-full py-12 px-6 bg-black/[0.98] ${bgImage ? bgImage : ''}`}>
       <div className="max-w-[1200px] mx-auto flex items-center">
         <div className="flex items-center">
           <img
