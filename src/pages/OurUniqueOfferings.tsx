@@ -1,31 +1,26 @@
-
 import React from 'react';
 import PageHeader from '@/components/PageHeader';
 import { Table, TableHeader, TableBody, TableRow, TableCell, TableHead } from "@/components/ui/table";
-
 const OurUniqueOfferings = () => {
-  return (
-    <div className="min-h-screen bg-gray-50">
-      <PageHeader 
-        title="Our Unique Offerings" 
-        subtitle="Transforming Business Growth Inside and Out" 
-      />
+  return <div className="min-h-screen bg-gray-50">
+      <PageHeader title="Our Unique Offerings" subtitle="Transforming Business Growth Inside and Out" />
       
       <div className="p-6 bg-[#f9f9f9]">
         <div className="max-w-[1200px] mx-auto my-8 px-5">
-          <h2 className="text-[36px] font-bold text-[#2c3e50] text-center mb-10 font-poppins">Our Unique Offerings</h2>
+          
           
           {/* Container 1 */}
-          <div 
-            style={{ transformStyle: 'preserve-3d' }} 
-            className="bg-white rounded-lg shadow-[0px_5px_10px_rgba(0,0,0,0.2)] p-6 mb-6 hover:rotate-[5deg] hover:translate-z-[20px] transition-all duration-300"
-          >
+          <div style={{
+          transformStyle: 'preserve-3d'
+        }} className="bg-white rounded-lg shadow-[0px_5px_10px_rgba(0,0,0,0.2)] p-6 mb-6 ">
             <h3 className="text-[32px] font-bold mb-4 font-poppins text-black">🚀 What Does Yanisa Offer?</h3>
             <p className="text-[24px] font-bold mb-6 text-black">We don't just provide services. We build business units. From visibility to profitability — Yanisa owns the outcome.</p>
             
             <div className="space-y-4">
               {/* Sub-container 1 */}
-              <div className="bg-white rounded-lg shadow-[0px_2px_5px_rgba(0,0,0,0.1)] p-4 hover:translate-z-[10px] transition-all duration-300" style={{ transformStyle: 'preserve-3d' }}>
+              <div className="bg-white rounded-lg shadow-[0px_2px_5px_rgba(0,0,0,0.1)] p-4 hover:translate-z-[10px] transition-all duration-300" style={{
+              transformStyle: 'preserve-3d'
+            }}>
                 <h4 className="text-[24px] font-bold mb-2 text-black">🟣 A. Yanisa Studio: Your Personal Brand Engine powered by AI + Automation</h4>
                 <p className="text-[16px] text-[#2c3e50]">
                   ✅ End-to-End Podcast Production (Ideation → Recording → Distribution)<br />
@@ -37,7 +32,9 @@ const OurUniqueOfferings = () => {
               </div>
               
               {/* Sub-container 2 */}
-              <div className="bg-white rounded-lg shadow-[0px_2px_5px_rgba(0,0,0,0.1)] p-4 hover:translate-z-[10px] transition-all duration-300" style={{ transformStyle: 'preserve-3d' }}>
+              <div className="bg-white rounded-lg shadow-[0px_2px_5px_rgba(0,0,0,0.1)] p-4 hover:translate-z-[10px] transition-all duration-300" style={{
+              transformStyle: 'preserve-3d'
+            }}>
                 <h4 className="text-[24px] font-bold mb-2 text-black">🟢 B. Growth as a Service (GaaS): Your Revenue Growth Engine powered by Tech + CXO Execution</h4>
                 <p className="text-[16px] text-[#2c3e50]">
                   ✅ Build custom AI agents for internal ops & lead handling<br />
@@ -50,10 +47,9 @@ const OurUniqueOfferings = () => {
           </div>
           
           {/* Container 2 */}
-          <div 
-            style={{ transformStyle: 'preserve-3d' }} 
-            className="bg-white rounded-lg shadow-[0px_5px_10px_rgba(0,0,0,0.2)] p-6 mb-6 hover:rotate-[5deg] hover:translate-z-[20px] transition-all duration-300"
-          >
+          <div style={{
+          transformStyle: 'preserve-3d'
+        }} className="bg-white rounded-lg shadow-[0px_5px_10px_rgba(0,0,0,0.2)] p-6 mb-6 ">
             <h3 className="text-[32px] font-bold mb-4 font-poppins text-black">💥 What You Get in 6 Months</h3>
             <div className="text-[16px] text-[#2c3e50]">
               <p>Profitable business unit with positive cash flows.</p>
@@ -119,8 +115,6 @@ const OurUniqueOfferings = () => {
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default OurUniqueOfferings;
