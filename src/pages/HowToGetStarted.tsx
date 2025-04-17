@@ -1,8 +1,14 @@
+
 import React from 'react';
 import PageHeader from '@/components/PageHeader';
+
 const HowToGetStarted = () => {
-  return <div className="min-h-screen bg-gray-50">
-      <PageHeader title="How to Get Started" subtitle="Your Path to Partnership with Modernizing Trends" />
+  return (
+    <div className="min-h-screen bg-gray-50">
+      <PageHeader 
+        title="How to Get Started" 
+        subtitle="Your Path to Partnership with Modernizing Trends" 
+      />
       
       <div className="p-6 bg-[#f9f9f9]">
         <div className="max-w-[1200px] mx-auto my-8 px-5">
@@ -11,8 +17,8 @@ const HowToGetStarted = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-[15px] md:gap-[20px]">
             {/* Container 1 */}
             <div style={{
-            transformStyle: 'preserve-3d'
-          }} className="bg-white rounded-lg shadow-[0px_5px_10px_rgba(0,0,0,0.2)] p-6 \n                 ">
+              transformStyle: 'preserve-3d'
+            }} className="bg-white rounded-lg shadow-[0px_5px_10px_rgba(0,0,0,0.2)] p-6 hover:rotate-[5deg] hover:translate-z-[20px] transition-all duration-300">
               <h3 className="font-bold mb-6 font-poppins text-black text-xl text-center">🚀 Yanisa Execution: Onboarding Timeline</h3>
               
               <ul className="space-y-4 text-[16px] text-[#2c3e50]">
@@ -28,8 +34,8 @@ const HowToGetStarted = () => {
             
             {/* Container 2 */}
             <div style={{
-            transformStyle: 'preserve-3d'
-          }} className="bg-white rounded-lg shadow-[0px_5px_10px_rgba(0,0,0,0.2)] p-6 \n                   ">
+              transformStyle: 'preserve-3d'
+            }} className="bg-white rounded-lg shadow-[0px_5px_10px_rgba(0,0,0,0.2)] p-6 hover:rotate-[5deg] hover:translate-z-[20px] transition-all duration-300">
               <h3 className="font-bold mb-6 font-poppins text-black text-lg text-center">🚀 How to Get Started with Yanisa Execution</h3>
               
               <p className="mb-4 text-[16px] text-[#2c3e50]">We don't just consult — we partner and execute with ownership. Here's how to begin your growth journey with us:</p>
@@ -55,6 +61,8 @@ const HowToGetStarted = () => {
           </div>
         </div>
       </div>
-    </div>;
+    </div>
+  );
 };
+
 export default HowToGetStarted;
