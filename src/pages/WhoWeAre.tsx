@@ -10,7 +10,7 @@ const WhoWeAre = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-[20px]">
             {/* Container 1: About Us */}
-            <div className="bg-white rounded-[10px] p-6 shadow-[5px_5px_10px_rgba(0,0,0,0.2)] transform transition-all duration-200 hover:rotate-[3deg] hover:translate-z-[20px] hover:shadow-[8px_8px_15px_rgba(0,0,0,0.3)] py-[26px] px-[25px] mx-0">
+            <div className="bg-white rounded-[10px] p-6 shadow-[5px_5px_10px_rgba(0,0,0,0.2)] py-[26px] px-[25px] mx-0">
               <h3 className="flex items-center text-black mb-4 font-poppins text-2xl font-extrabold">
                 <span className="mr-2">🟩</span> About Us
               </h3>
