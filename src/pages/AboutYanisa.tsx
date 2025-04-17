@@ -7,7 +7,6 @@ const AboutYanisa = () => {
     <div className="min-h-screen bg-gray-50">
       <PageHeader 
         title="About Yanisa" 
-        subtitle="Potential to Reality" 
       />
       
       <div className="p-6 bg-[#f9f9f9]">
@@ -31,6 +30,21 @@ const AboutYanisa = () => {
                 cost of tools, tech, and team borne by the brand. Our role is to drive business outcomes—measured in revenue, 
                 systems, and scale.
               </p>
+              
+              <h4 className="text-2xl font-bold text-[#2c3e50] mb-4">
+                Let's redefine what it means to build a Scalable Business
+              </h4>
+              
+              <p className="text-lg text-[#333] mb-6">
+                Are you ready to join the revolution?
+              </p>
+            </div>
+            <div className="md:col-span-1 flex justify-center items-start">
+              <img 
+                src="/lovable-uploads/bcdd24b6-2070-4032-9ac0-5ee94c58799c.png" 
+                alt="Yanisa Team Member" 
+                className="rounded-lg shadow-lg max-w-full h-auto"
+              />
             </div>
           </div>
         </div>

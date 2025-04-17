@@ -7,7 +7,6 @@ const DuBeautyMeetsFunctionality = () => {
     <div className="min-h-screen bg-gray-50">
       <PageHeader 
         title="DU Beauty Meets Functionality" 
-        subtitle="Modernizing bathroom designs with cutting-edge technology" 
       />
       
       <div className="p-6">

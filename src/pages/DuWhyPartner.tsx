@@ -6,8 +6,7 @@ const DuWhyPartner = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       <PageHeader 
-        title="DU Why Partner" 
-        subtitle="Document Upload for Partnership Benefits" 
+        title="DU Why Partner"
       />
       
       <div className="p-6">

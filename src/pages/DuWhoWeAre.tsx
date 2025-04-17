@@ -31,7 +31,7 @@ const DuWhoWeAre = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <PageHeader title="DU Who We Are" subtitle="Document Upload for Company Information" />
+      <PageHeader title="DU Who We Are" />
       
       <div className="p-6 bg-[#f9f9f9]">
         <div className="max-w-[800px] mx-auto py-8 px-5">

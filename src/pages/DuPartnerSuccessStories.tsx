@@ -31,7 +31,7 @@ const DuPartnerSuccessStories = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <PageHeader title="DU Partner Success Stories" subtitle="Document Upload for Success Stories" />
+      <PageHeader title="DU Partner Success Stories" />
       
       <div className="p-6 bg-[#f9f9f9]">
         <div className="max-w-[800px] mx-auto py-8 px-5">

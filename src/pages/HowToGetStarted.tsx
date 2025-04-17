@@ -1,8 +1,11 @@
+
 import React from 'react';
 import PageHeader from '@/components/PageHeader';
+
 const HowToGetStarted = () => {
-  return <div className="min-h-screen bg-gray-50">
-      <PageHeader title="How to Get Started" subtitle="Your Path to Partnership with Modernizing Trends" />
+  return (
+    <div className="min-h-screen bg-gray-50">
+      <PageHeader title="How to Get Started" />
       
       <div className="p-6 bg-[#f9f9f9]">
         <div className="max-w-[1200px] mx-auto my-8 px-5">
@@ -57,4 +60,5 @@ const HowToGetStarted = () => {
       </div>
     </div>;
 };
+
 export default HowToGetStarted;

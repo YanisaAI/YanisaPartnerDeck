@@ -7,7 +7,6 @@ const DuOurUniqueOfferings = () => {
     <div className="min-h-screen bg-gray-50">
       <PageHeader 
         title="DU Our Unique Offerings" 
-        subtitle="Document Upload for Product Information" 
       />
       
       <div className="p-6">
