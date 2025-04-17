@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -112,12 +111,28 @@
 }
 
 /* 3D transform styles */
+.translate-z-\[10px\] {
+  transform: translateZ(10px);
+}
+
 .translate-z-\[20px\] {
   transform: translateZ(20px);
 }
 
+.hover\:translate-z-\[10px\]:hover {
+  transform: translateZ(10px);
+}
+
 .hover\:translate-z-\[20px\]:hover {
   transform: translateZ(20px);
+}
+
+.hover\:rotate-\[5deg\]:hover {
+  transform: rotate(5deg) translateZ(20px);
+}
+
+.hover\:rotate-\[7deg\]:hover {
+  transform: rotate(7deg) translateZ(20px);
 }
 
 /* Add perspective for 3D effect */
