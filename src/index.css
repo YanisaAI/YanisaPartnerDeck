@@ -110,3 +110,23 @@
     @apply w-5 h-5;
   }
 }
+
+/* 3D transform styles */
+.translate-z-\[20px\] {
+  transform: translateZ(20px);
+}
+
+.hover\:translate-z-\[20px\]:hover {
+  transform: translateZ(20px);
+}
+
+/* Add perspective for 3D effect */
+.grid {
+  perspective: 1000px;
+}
+
+/* Apply transform-style to children */
+.grid > div {
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}

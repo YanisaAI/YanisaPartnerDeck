@@ -1,6 +1,8 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FileText, Calendar, Sparkles, Users, Package, HelpCircle, BarChart3, Layers, Award, Clock } from 'lucide-react';
+
 const sidebarItems = [{
   icon: FileText,
   label: 'Selected Partner',
@@ -14,33 +16,17 @@ const sidebarItems = [{
   label: 'Beauty Meets Functionality',
   path: '/beauty-meets-functionality'
 }, {
-  icon: Sparkles,
-  label: '(DU)Beauty Meets Functionality',
-  path: '/du-beauty-meets-functionality'
-}, {
   icon: Users,
   label: 'Who we are?',
   path: '/who-we-are'
-}, {
-  icon: Users,
-  label: '(DU)Who we are?',
-  path: '/du-who-we-are'
 }, {
   icon: Package,
   label: 'Our Unique Offerings',
   path: '/our-unique-offerings'
 }, {
-  icon: Package,
-  label: '(DU)Our Unique Offerings',
-  path: '/du-our-unique-offerings'
-}, {
   icon: HelpCircle,
   label: 'Why Partner?',
   path: '/why-partner'
-}, {
-  icon: HelpCircle,
-  label: '(DU)Why Partner?',
-  path: '/du-why-partner'
 }, {
   icon: Layers,
   label: 'Partnership Levels',
@@ -50,10 +36,6 @@ const sidebarItems = [{
   label: 'Partner Success Stories',
   path: '/partner-success-stories'
 }, {
-  icon: Award,
-  label: '(DU)Partner Success Stories',
-  path: '/du-partner-success-stories'
-}, {
   icon: BarChart3,
   label: 'Revenue Opportunities',
   path: '/revenue-opportunities'
@@ -62,6 +44,7 @@ const sidebarItems = [{
   label: 'How to get started?',
   path: '/how-to-get-started'
 }];
+
 const Sidebar = () => {
   return <div className="w-[220px] min-h-screen bg-sidebar flex flex-col border-r border-sidebar-border">
       <div className="p-4 border-b border-sidebar-border">
@@ -87,4 +70,5 @@ const Sidebar = () => {
       </div>
     </div>;
 };
+
 export default Sidebar;
