@@ -1,23 +1,20 @@
-
 import React from 'react';
 import PageHeader from '@/components/PageHeader';
-
 const WhoWeAre = () => {
-  return (
-    <div className="min-h-screen bg-gray-50">
+  return <div className="min-h-screen bg-gray-50">
       <PageHeader title="Meet Us - The bathroom Experts" subtitle="Transforming Bathrooms Inside and Out" />
       
       <div className="p-6 bg-[#f9f9f9]">
-        <div className="max-w-[1200px] mx-auto py-8 px-5">
+        <div className="max-w-[1200px] py-8 px-[5px] mx-0 rounded-md bg-white">
           <h2 className="text-[36px] font-bold text-[#2c3e50] text-center mb-10 font-poppins">Who We Are</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-[20px]">
             {/* Container 1: About Us */}
-            <div className="bg-white rounded-[10px] p-6 shadow-[5px_5px_10px_rgba(0,0,0,0.2)] transform transition-all duration-300 hover:rotate-[5deg] hover:translate-z-[20px] hover:shadow-[8px_8px_15px_rgba(0,0,0,0.3)]">
-              <h3 className="flex items-center text-[32px] font-bold text-black mb-4 font-poppins">
+            <div className="bg-white rounded-[10px] p-6 shadow-[5px_5px_10px_rgba(0,0,0,0.2)] transform transition-all duration-200 hover:rotate-[3deg] hover:translate-z-[20px] hover:shadow-[8px_8px_15px_rgba(0,0,0,0.3)] py-[26px] px-[25px] mx-0">
+              <h3 className="flex items-center text-black mb-4 font-poppins text-2xl font-extrabold">
                 <span className="mr-2">🟩</span> About Us
               </h3>
-              <h4 className="text-[24px] font-bold text-black mb-4 font-poppins">Transforming Brands with Strategy, Story & Scale</h4>
+              <h4 className="font-bold text-black mb-4 font-poppins text-lg text-center">Transforming Brands with Strategy, Story & Scale</h4>
               <ul className="space-y-3 text-[16px] text-[#2c3e50]">
                 <li><strong>Founder-Led GTM Powerhouse:</strong> Built by marketers, investors, and entrepreneurs to supercharge growth from day zero.</li>
                 <li><strong>Obsessed with Outcomes:</strong> Whether it's virality or velocity, everything we do moves the topline forward.</li>
@@ -29,10 +26,10 @@ const WhoWeAre = () => {
             
             {/* Container 2: What Sets Us Apart? */}
             <div className="bg-white rounded-[10px] p-6 shadow-[5px_5px_10px_rgba(0,0,0,0.2)] transform transition-all duration-300 hover:rotate-[7deg] hover:translate-z-[20px] hover:shadow-[8px_8px_15px_rgba(0,0,0,0.3)]">
-              <h3 className="flex items-center text-[32px] font-bold text-black mb-4 font-poppins">
+              <h3 className="flex items-center font-bold text-black mb-4 font-poppins text-2xl">
                 <span className="mr-2">🟪</span> What Sets Us Apart?
               </h3>
-              <p className="text-[24px] font-bold text-black mb-4 font-poppins">Human-Led Creativity. AI-Powered Execution.</p>
+              <p className="text-black mb-4 font-poppins font-extrabold text-lg text-center">Human-Led Creativity. AI-Powered Execution.</p>
               <ul className="space-y-3 text-[16px] text-[#2c3e50]">
                 <li><strong>AI-Powered Sales Teams:</strong> Deploy AI agents that qualify leads, book calls, and follow up—all in your voice.</li>
                 <li><strong>Web Apps, Sites & Funnels Built Fast:</strong> From code to no-code, we launch customer-facing tech in days, not weeks.</li>
@@ -44,10 +41,10 @@ const WhoWeAre = () => {
             
             {/* Container 3: What's In It For You? */}
             <div className="bg-white rounded-[10px] p-6 shadow-[5px_5px_10px_rgba(0,0,0,0.2)] transform transition-all duration-300 hover:rotate-[5deg] hover:translate-z-[20px] hover:shadow-[8px_8px_15px_rgba(0,0,0,0.3)]">
-              <h3 className="flex items-center text-[32px] font-bold text-black mb-4 font-poppins">
+              <h3 className="flex items-center font-bold text-black mb-4 font-poppins text-2xl">
                 <span className="mr-2">🟥</span> What's In It For You?
               </h3>
-              <h4 className="text-[24px] font-bold text-black mb-4 font-poppins">Plug, Play, Perform</h4>
+              <h4 className="font-bold text-black mb-4 font-poppins text-lg text-center">Plug, Play, Perform</h4>
               <ul className="space-y-3 text-[16px] text-[#2c3e50]">
                 <li><strong>Category Leadership:</strong> We position your brand so well, it becomes the reference point in your industry.</li>
                 <li><strong>Content that Converts, Not Just Looks Good:</strong> Every reel, script, and post is built to drive one thing—business outcomes.</li>
@@ -59,8 +56,6 @@ const WhoWeAre = () => {
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default WhoWeAre;
