@@ -8,13 +8,8 @@ import { cn } from '@/lib/utils';
 const sidebarItems = [
   {
     icon: Sparkles,
-    label: 'About Yanisa',
+    label: 'About Us',
     path: '/about-yanisa'
-  },
-  {
-    icon: Users,
-    label: 'Who we are?',
-    path: '/who-we-are'
   },
   {
     icon: Package,
@@ -43,7 +38,7 @@ const sidebarItems = [
   },
   {
     icon: Clock,
-    label: 'How to get started?',
+    label: 'How to Get Started?',
     path: '/how-to-get-started'
   }
 ];
@@ -55,16 +50,28 @@ const Sidebar = () => {
   return (
     <div 
       className={cn(
-        "fixed left-0 top-[180px] bottom-0 bg-[#1a1a1a] flex flex-col border-r border-sidebar-border transition-all duration-300 z-10",
+        "fixed left-0 top-0 bottom-0 bg-[#1a1a1a] flex flex-col border-r border-sidebar-border transition-all duration-300 z-20 h-screen",
         isCollapsed ? "w-[60px]" : "w-[200px]"
       )}
     >
-      <div className="p-4 border-b border-sidebar-border flex justify-between items-center">
+      <div className="p-4 flex flex-col items-center border-b border-sidebar-border">
+        {/* Logo placeholder */}
+        <div className="w-full flex justify-center mb-2">
+          <div className="h-[50px] w-[50px] bg-white flex items-center justify-center rounded-full text-black text-2xl font-bold">
+            Y
+          </div>
+        </div>
+        
+        {/* Tagline */}
+        {!isCollapsed && (
+          <p className="text-white text-sm font-semibold mt-2 text-center">Yanisa Partner Deck</p>
+        )}
+        
         <Button 
           variant="ghost" 
           size="icon"
           onClick={() => setIsCollapsed(!isCollapsed)}
-          className="h-8 w-8 p-0 text-white hover:bg-gray-700 ml-auto"
+          className="h-8 w-8 p-0 text-white hover:bg-gray-700 mt-4"
         >
           <ChevronLeft className={cn("h-5 w-5 transition-transform", isCollapsed && "rotate-180")} />
         </Button>
@@ -89,6 +96,19 @@ const Sidebar = () => {
             );
           })}
         </nav>
+      </div>
+      
+      {/* Footer with Sign In button */}
+      <div className="p-4 border-t border-sidebar-border">
+        <Button 
+          variant="outline" 
+          className={cn(
+            "w-full bg-white text-black hover:bg-gray-100",
+            isCollapsed && "p-0 flex justify-center"
+          )}
+        >
+          {isCollapsed ? "SI" : "Sign In"}
+        </Button>
       </div>
     </div>
   );
