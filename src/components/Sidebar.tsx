@@ -66,17 +66,17 @@ const Sidebar = () => {
         
         {/* Tagline */}
         {!isCollapsed && (
-          <p className="text-white text-sm font-semibold mt-2 text-center">Yanisa Partner Deck</p>
+          <p className="text-white text-sm font-semibold mt-1 text-center">Yanisa Partner Deck</p>
         )}
         
-        {/* Toggle button moved to top right */}
+        {/* Toggle button positioned at top right */}
         <Button 
           variant="ghost" 
           size="icon"
           onClick={toggle}
-          className="absolute right-2 top-2 h-8 w-8 p-0 text-white hover:bg-gray-700"
+          className="absolute right-1 top-1 h-7 w-7 p-0 text-white hover:bg-gray-700"
         >
-          <ChevronLeft className={cn("h-5 w-5 transition-transform", isCollapsed && "rotate-180")} />
+          <ChevronLeft className={cn("h-4 w-4 transition-transform", isCollapsed && "rotate-180")} />
         </Button>
       </div>
       
@@ -101,18 +101,17 @@ const Sidebar = () => {
         </nav>
       </div>
       
-      {/* Footer with Sign In button */}
-      <div className="p-4 border-t border-sidebar-border">
-        <Button 
-          variant="outline" 
-          className={cn(
-            "w-full bg-white text-black hover:bg-gray-100",
-            isCollapsed && "p-0 flex justify-center"
-          )}
-        >
-          {isCollapsed ? "SI" : "Sign In"}
-        </Button>
-      </div>
+      {/* Footer with Sign In button - only shown when sidebar is expanded */}
+      {!isCollapsed && (
+        <div className="p-4 border-t border-sidebar-border">
+          <Button 
+            variant="outline" 
+            className="w-full bg-white text-black hover:bg-gray-100"
+          >
+            Sign In
+          </Button>
+        </div>
+      )}
     </div>
   );
 };

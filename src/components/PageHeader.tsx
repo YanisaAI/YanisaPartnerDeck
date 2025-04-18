@@ -23,7 +23,7 @@ const PageHeader: React.FC<PageHeaderProps> = ({
           <img
             src="/lovable-uploads/6356e53c-6eea-43a0-bc70-48f1701e9a20.png"
             alt="Yanisa Execution"
-            className="h-10 mr-4"
+            className={`h-8 mr-2 ${isCollapsed ? 'h-6' : 'h-8'}`}
           />
         </div>
         <div className="flex-1 text-center">
