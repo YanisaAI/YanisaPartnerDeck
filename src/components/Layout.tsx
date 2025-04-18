@@ -35,11 +35,13 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <div className="flex min-h-screen bg-background">
       <Sidebar />
-      <div className="flex flex-col flex-1">
-        <PageHeader title={pageTitle} />
-        <main className="flex-1 overflow-x-auto pt-[80px] md:pl-[200px] px-4 md:px-6 transition-all duration-300">
-          {children}
-        </main>
+      <div className="flex-1 transition-all duration-300">
+        <div className="relative">
+          <PageHeader title={pageTitle} />
+          <main className="pt-[80px] px-4 md:px-6">
+            {children}
+          </main>
+        </div>
       </div>
     </div>
   );

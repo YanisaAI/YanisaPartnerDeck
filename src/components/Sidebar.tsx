@@ -1,9 +1,10 @@
 
-import React, { useState } from 'react';
+import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Sparkles, Users, Package, HelpCircle, Layers, Award, BarChart3, Clock, ChevronLeft } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
+import { useSidebar } from '@/hooks/use-sidebar';
 
 const sidebarItems = [
   {
@@ -44,8 +45,9 @@ const sidebarItems = [
 ];
 
 const Sidebar = () => {
-  const [isCollapsed, setIsCollapsed] = useState(false);
   const location = useLocation();
+  const { state, toggle } = useSidebar();
+  const isCollapsed = state === 'collapsed';
 
   return (
     <div 
@@ -54,7 +56,7 @@ const Sidebar = () => {
         isCollapsed ? "w-[60px]" : "w-[200px]"
       )}
     >
-      <div className="p-4 flex flex-col items-center border-b border-sidebar-border">
+      <div className="p-4 flex flex-col items-center border-b border-sidebar-border relative">
         {/* Logo placeholder */}
         <div className="w-full flex justify-center mb-2">
           <div className="h-[50px] w-[50px] bg-white flex items-center justify-center rounded-full text-black text-2xl font-bold">
@@ -67,11 +69,12 @@ const Sidebar = () => {
           <p className="text-white text-sm font-semibold mt-2 text-center">Yanisa Partner Deck</p>
         )}
         
+        {/* Toggle button moved to top right */}
         <Button 
           variant="ghost" 
           size="icon"
-          onClick={() => setIsCollapsed(!isCollapsed)}
-          className="h-8 w-8 p-0 text-white hover:bg-gray-700 mt-4"
+          onClick={toggle}
+          className="absolute right-2 top-2 h-8 w-8 p-0 text-white hover:bg-gray-700"
         >
           <ChevronLeft className={cn("h-5 w-5 transition-transform", isCollapsed && "rotate-180")} />
         </Button>

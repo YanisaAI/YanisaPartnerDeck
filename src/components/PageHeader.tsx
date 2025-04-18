@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { useSidebar } from '@/hooks/use-sidebar';
 
 interface PageHeaderProps {
   title: string;
@@ -12,8 +13,11 @@ const PageHeader: React.FC<PageHeaderProps> = ({
   subtitle = "Potential to Reality",
   bgImage,
 }) => {
+  const { state } = useSidebar();
+  const isCollapsed = state === 'collapsed';
+
   return (
-    <div className={`w-full py-6 px-6 bg-black/[0.98] fixed top-0 left-0 z-10 ${bgImage ? bgImage : ''}`}>
+    <div className={`w-full py-6 px-6 bg-black/[0.98] fixed top-0 transition-all duration-300 z-10 ${isCollapsed ? 'left-[60px]' : 'left-[200px]'} right-0 ${bgImage ? bgImage : ''}`}>
       <div className="max-w-[1200px] mx-auto flex items-center justify-between">
         <div className="flex items-center">
           <img
