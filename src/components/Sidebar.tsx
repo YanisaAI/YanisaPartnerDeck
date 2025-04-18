@@ -44,7 +44,7 @@ const Sidebar = () => {
       <div className="p-4 flex flex-col items-center border-b border-sidebar-border relative">
         {/* Logo placeholder */}
         <div className="w-20 flex justify-center mb-1">
-          <div className="h-[50px] w-[50px] bg-white flex items-center justify-center rounded-full text-black text-2xl font-bold">
+          <div className="h-[40px] w-[40px] bg-white flex items-center justify-center rounded-full text-black text-2xl font-bold">
             Y
           </div>
         </div>
