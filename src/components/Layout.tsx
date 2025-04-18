@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import Sidebar from './Sidebar';
 import { useLocation } from 'react-router-dom';
 import PageHeader from './PageHeader';
+import { useSidebar } from '@/hooks/use-sidebar';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -10,6 +11,8 @@ interface LayoutProps {
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   const location = useLocation();
+  const { state } = useSidebar();
+  const isCollapsed = state === 'collapsed';
   const [pageTitle, setPageTitle] = useState('About Yanisa');
   
   // Update page title based on the current route
@@ -35,10 +38,10 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <div className="flex min-h-screen bg-background">
       <Sidebar />
-      <div className="flex-1 transition-all duration-300">
-        <div className="relative">
+      <div className={`flex-1 transition-all duration-300 ${isCollapsed ? 'ml-[60px]' : 'ml-[200px]'}`}>
+        <div className="flex flex-col min-h-screen">
           <PageHeader title={pageTitle} />
-          <main className="pt-[80px] px-4 md:px-6">
+          <main className="flex-1 px-4 md:px-6 py-6">
             {children}
           </main>
         </div>
