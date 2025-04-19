@@ -21,7 +21,7 @@ const PageHeader: React.FC<PageHeaderProps> = ({
         </div>
         <div className="flex-1 text-center">
           <h1 className="text-xl md:text-2xl font-bold text-white">{title}</h1>
-          {subtitle && <p className="text-sm md:text-base text-white/90 mt-1">{subtitle}</p>}
+          {subtitle}
         </div>
       </div>
     </div>;

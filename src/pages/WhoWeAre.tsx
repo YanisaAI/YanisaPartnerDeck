@@ -1,15 +1,12 @@
-
 import React from 'react';
 import PageHeader from '@/components/PageHeader';
-
 const WhoWeAre = () => {
-  return (
-    <div className="min-h-screen bg-gray-50">
+  return <div className="min-h-screen bg-gray-50">
       <PageHeader title="Meet Us - The Execution Experts" subtitle="Transforming Businesses Inside and Out" />
       
-      <div className="p-6 bg-[#f9f9f9]">
+      <div className="p-6 px-0 py-0 bg-white">
         <div className="max-w-[1200px] mx-auto py-8 px-[5px] rounded-md bg-white">
-          <h2 className="text-[36px] font-bold text-[#2c3e50] text-center mb-10 font-poppins">Who We Are</h2>
+          
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             {/* Container 1: About Us */}
@@ -59,8 +56,6 @@ const WhoWeAre = () => {
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default WhoWeAre;
