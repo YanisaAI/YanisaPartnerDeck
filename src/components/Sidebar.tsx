@@ -4,10 +4,15 @@ import { Sparkles, Users, Package, HelpCircle, Layers, Award, BarChart3, Clock, 
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import { useSidebar } from '@/hooks/use-sidebar';
+
 const sidebarItems = [{
   icon: Sparkles,
   label: 'About Us',
   path: '/about-yanisa'
+}, {
+  icon: Users,
+  label: 'Who We Are',
+  path: '/who-we-are'
 }, {
   icon: Package,
   label: 'Our Unique Offerings',
@@ -33,6 +38,7 @@ const sidebarItems = [{
   label: 'How to Get Started?',
   path: '/how-to-get-started'
 }];
+
 const Sidebar = () => {
   const location = useLocation();
   const {
@@ -78,4 +84,5 @@ const Sidebar = () => {
         </div>}
     </div>;
 };
+
 export default Sidebar;
