@@ -43,7 +43,7 @@ const Sidebar = () => {
   return <div className={cn("fixed left-0 top-0 bottom-0 bg-[#1a1a1a] flex flex-col border-r border-sidebar-border transition-all duration-300 z-20 h-screen", isCollapsed ? "w-[60px]" : "w-[200px]")}>
       <div className="p-4 flex flex-col items-center border-b border-sidebar-border relative">
         {/* Logo placeholder */}
-        <div className="w-20 flex justify-center mb-1">
+        <div className="w-17 flex justify-center mb-1">
           <div className="h-[40px] w-[40px] bg-white flex items-center justify-center rounded-full text-black text-2xl font-bold">
             Y
           </div>
@@ -53,7 +53,7 @@ const Sidebar = () => {
         {!isCollapsed && <p className="text-white text-sm font-semibold mt-1 text-center">Yanisa Partner Deck</p>}
         
         {/* Toggle button positioned at top right */}
-        <Button variant="ghost" size="icon" onClick={toggle} className="absolute right-1 top-1 h-5 w-5 p-0 text-white hover:bg-gray-700">
+        <Button variant="ghost" size="icon" onClick={toggle} className="absolute right-1 top-1 h-4 w-4 p-0 text-white hover:bg-white-700">
           <ChevronLeft className={cn("h-4 w-4 transition-transform", isCollapsed && "rotate-180")} />
         </Button>
       </div>
