@@ -1,15 +1,10 @@
-
 import React from 'react';
 import PageHeader from '@/components/PageHeader';
-
 const AboutYanisa = () => {
-  return (
-    <div className="min-h-screen bg-gray-50">
-      <PageHeader 
-        title="About Yanisa" 
-      />
+  return <div className="min-h-screen bg-gray-50">
+      <PageHeader title="About Yanisa" />
       
-      <div className="p-6 bg-[#f9f9f9]">
+      <div className="bg-white">
         <div className="max-w-[1200px] mx-auto py-8 px-5">
           <div className="mb-8 grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="md:col-span-2">
@@ -40,17 +35,11 @@ const AboutYanisa = () => {
               </p>
             </div>
             <div className="md:col-span-1 flex justify-center items-start">
-              <img 
-                src="/lovable-uploads/bcdd24b6-2070-4032-9ac0-5ee94c58799c.png" 
-                alt="Yanisa Team Member" 
-                className="rounded-lg shadow-lg max-w-full h-auto"
-              />
+              <img src="/lovable-uploads/bcdd24b6-2070-4032-9ac0-5ee94c58799c.png" alt="Yanisa Team Member" className="rounded-lg shadow-lg max-w-full h-auto" />
             </div>
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default AboutYanisa;
